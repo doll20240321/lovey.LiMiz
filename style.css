@@ -1,3 +1,12 @@
+html {
+  font-size: 10px;
+  background-color: #4F413F;
+}
+body {
+  width: 600px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  
 h1 {
   font-size: 60px;
   font-family: "Mansalva", sans-serif;
@@ -8,4 +17,5 @@ li {
   font-size: 16px;
   ling-height: 2;
   letter-spacing: 1px;
+  border: 5px solid black;
 }
