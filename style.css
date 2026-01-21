@@ -1,6 +1,7 @@
 html {
   font-size: 10px; 
   /* 背景與文字顏色建議放在 body 統一管理 */
+  background-color: #3d3321;
 }
 
 body {
@@ -10,15 +11,17 @@ body {
   color: #f4f4f4;           /* 全域文字改成淺色 */
   padding: 0 20px 20px 20px;
   border: 5px solid #000;    /* MDN 範例通常會加個邊框 */
+  /* 語法：box-shadow: X軸偏移 Y軸偏移 模糊距離 陰影大小 顏色; */
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 h1 {
-  font-size: 6rem;           /* 因為 html 是 10px，6rem = 60px */
+  font-size: 2.4rem;           /* 因為 html 是 10px，6rem = 60px */
   font-family: "Mansalva", sans-serif;
   text-align: center;
   margin: 0;
   padding: 20px 0;
-  color: #f4f4f4;           /* 標題用你選的紫色 */
+  color: #f4f4f4;
   text-shadow: 3px 3px 1px black; /* 讓手寫體更立體 */
 }
 
@@ -27,7 +30,9 @@ li {
   font-size: 1.6rem;        /* 16px */
   line-height: 2;           /* 修正拼字：line-height */
   letter-spacing: 1px;
+  text-align: center;
   color: #f4f4f4;           /* 確保段落文字是淺色 */
+  text-align: justify;
 }
 
 img {
