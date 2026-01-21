@@ -1,12 +1,14 @@
 html {
   font-size: 10px;
-  font-color: #f4f4f4; 
+  color: #f4f4f4; 
   background-color: #241a08;
 }
 body {
   width: 600px;
   margin: 0 auto;
   padding: 0 20px 20px 20px;
+  background-color: #f5f9fb;
+  border: 5px solid black;
 }
 h1 {
   font-size: 100px;
@@ -18,5 +20,4 @@ li {
   font-size: 16px;
   ling-height: 2;
   letter-spacing: 1px;
-}
 }
