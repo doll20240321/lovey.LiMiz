@@ -5,7 +5,8 @@ html {
 }
 
 body {
-  max-width: 600px;
+  max-width: 300px;
+  width: 90%;
   margin: 0 auto;
   background-color: #241a08; /* 換回深褐色底 */
   color: #f4f4f4;           /* 全域文字改成淺色 */
@@ -16,7 +17,7 @@ body {
 }
 
 h1 {
-  font-size: 2.4rem;           /* 因為 html 是 10px，6rem = 60px */
+  font-size: 4rem;
   font-family: "Mansalva", sans-serif;
   text-align: center;
   margin: 0;
@@ -32,11 +33,10 @@ li {
   letter-spacing: 1px;
   text-align: center;
   color: #f4f4f4;           /* 確保段落文字是淺色 */
-  text-align: justify;
 }
 
 img {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 90%;
 }
