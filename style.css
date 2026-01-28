@@ -40,11 +40,13 @@ img {
   max-width: 90%;
 }
 
+/*搭配JS用CSS*/
 .done {
   color: darkseagreen;
   text-decoration: line-through solied black 2px;
 }
 
+/*JS本人*/
 const listItem =
 doocument.querySelectorAll("li");
 function toggleDone(e) {
@@ -56,5 +58,6 @@ function toggleDone(e) {
 }
 
 listItems.forEach((item) => {
+
   item.addEventListener("click",toggleDone);
 });
