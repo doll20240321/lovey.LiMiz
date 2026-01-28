@@ -39,3 +39,22 @@ img {
   margin: 0 auto;
   max-width: 90%;
 }
+
+.done {
+  color: darkseagreen;
+  text-decoration: line-through solied black 2px;
+}
+
+const listItem =
+doocument.querySelectorAll("li");
+function toggleDone(e) {
+  if (!e.target.className) {
+    e.target.className = "done";
+  } else {
+    e.target.className = " ";
+  }
+}
+
+listItems.forEach((item) => {
+  item.addEventListener("click",toggleDone);
+});
