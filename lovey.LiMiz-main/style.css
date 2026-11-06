@@ -1,0 +1,62 @@
+html {
+  font-size: 10px; 
+  /* 背景與文字顏色建議放在 body 統一管理 */
+  background-color: #3d3321;
+}
+
+body {
+  max-width: 500px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #241a08; /* 換回深褐色底 */
+  color: #f4f4f4;           /* 全域文字改成淺色 */
+  padding: 0 20px 20px 20px;
+  /* 語法：box-shadow: X軸偏移 Y軸偏移 模糊距離 陰影大小 顏色; */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+  font-size: 40px;
+  font-family: "Mansalva", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  color: #f4f4f4;
+  text-shadow: 3px 3px 1px black; /* 讓手寫體更立體 */
+}
+
+p,
+li {
+  font-size: 16px;        /* 16px */
+  line-height: 2;           /* 修正拼字：line-height */
+  letter-spacing: 1px;
+  text-align: justify;
+  color: #f4f4f4;           /* 確保段落文字是淺色 */
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+/*搭配JS用CSS*/
+.done {
+  color: darkseagreen;
+  text-decoration: line-through solied black 2px;
+}
+
+/*JS本人*/
+const listItem = document.querySelectorAll("li");
+function toggleDone(e) {
+  if (!e.target.className) {
+    e.target.className = "done";
+  } else {
+    e.target.className = "";
+  }
+}
+
+listItems.forEach((item) => {
+
+  item.addEventListener("click",toggleDone);
+});
